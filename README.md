@@ -19,7 +19,7 @@ project directory. There are **23 pending tests** that you must pass to complete
 this exercise.
 
 Similar to the Simple Bank Exercise, check out the test file to see the tests that define the behavior of the
-SupplyChain smart contract. 
+SupplyChain smart contract.
 
 <!-- Notice the tests are in `it` blocks and have a
 `skip` modifier, which disables the test. To enable the test, remove the
@@ -29,7 +29,7 @@ and `only` which runs only that test. But what if more than one test have the
 
 ### State variables
 
-  - [ ] should have an owner
+  - [x] should have an owner
     <details><summary>:book:</summary>
 
     The contract should have an owner, of type address that is public.
@@ -37,12 +37,12 @@ and `only` which runs only that test. But what if more than one test have the
 
     </details>
 
-  - [ ] should have an skuCount
+  - [x] should have an skuCount
     <details><summary>:book:</summary>
 
     The contract will keep track of the
     [sku](https://en.wikipedia.org/wiki/Stock_keeping_unit)s in our supply
-    chain. Each item for sale will have a unique sku number. 
+    chain. Each item for sale will have a unique sku number.
 
     **hint**: define a public variable called `skuCounter` of type uint
 
@@ -66,12 +66,12 @@ How do we describe an item in our supply chain? It is a union of properties:
 `struct` to model this Item. Remove the `skip` annotation from the `Item
 struct` tests and proceed.
 
-  - [ ] should have a `name`
-  - [ ] should have a `sku`
-  - [ ] should have a `price`
-  - [ ] should have a `state`
-  - [ ] should have a `seller`
-  - [ ] should have a `buyer`
+  - [x] should have a `name`
+  - [x] should have a `sku`
+  - [x] should have a `price`
+  - [x] should have a `state`
+  - [x] should have a `seller`
+  - [x] should have a `buyer`
 
 ### SupplyChain Use cases
 
@@ -79,7 +79,7 @@ struct` tests and proceed.
 
   - [ ] should add an item with the provided name and price
     <details><summary>:book:</summary>
-    use case: As a seller, I want to add an item for sale. I should 
+    use case: As a seller, I want to add an item for sale. I should
     </details>
   - [ ] should emit a LogForSale event when an item is added
     <details><summary>:book:</summary>
